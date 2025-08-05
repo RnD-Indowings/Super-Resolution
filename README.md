@@ -84,6 +84,79 @@ Other recommended projects:<br>
 
 #### YouTube
 
+##Indo Wings
+Super Resolution Using Deep Learning 
+
+To upscale thermal images using the official Real-ESRGAN repository and the RealESRGAN_x{any model u need} plus model, outputting high-resolution results (e.g., 2560×2048 pixels or whatever the resolution needed) while ensuring compatibility and avoiding common errors. 
+
+Requirements 
+
+    Python 3.10+ 
+
+    PyTorch (CPU or GPU) 
+
+    CUDA 11+ 
+
+    Real-ESRGAN dependencies 
+
+Steps for downloading and installation: 
+
+    pip install realesrgan 
+
+    git clone https://github.com/xinntao/Real-ESRGAN.git 
+
+    cd Real-ESRGAN 
+
+    pip install -r requirements.txt 
+
+    python inference_realesrgan.py -n RealESRGAN_x2plus (what this will do is install the required .pth weights according to your needs) 
+
+    pip install -e . --user 
+
+    pip install basicsr facexlib gfpgan –U (for GPU Support) 
+
+    pip install -r requirements.txt 
+
+    pip install -e . --user 
+
+    pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121 (For CUDA GPU) 
+
+    python inference_realesrgan.py -n RealESRGAN_x2plus  (FOR CUDA GPU same) 
+
+FOR CUDA VERSION CHECK: 
+
+nvcc --version 
+
+Got the latest version as 11.5, so the command for it is: 
+
+pip install torch==1.11.0+cu115 torchvision==0.12.0+cu115 --extra-index-url https://download.pytorch.org/whl/cu115 
+
+FOR checking the installation: 
+
+    cd ~/Real-ESRGAN  
+
+    python inference_realesrgan.py -n RealESRGAN_x2plus -i inputs/your_image.jpg  (insert your image path according to your PC) 
+
+Output: 
+                                                                    Testing 0 pic......  
+                 the output will be saved inside the results folder of Real-ESRGAN 
+
+------------------------------------------------------------------------------------------------- 
+
+Batch Script with Official Real-ESRGAN 
+
+Will build your batch processing script using RRDBNet (the real model) and the same internal logic used by inference_realesrgan.py. 
+
+    Load the pretrained RRDBNet model (x4) 
+
+    Use the RealESRGANer inference wrapper (used in inference_realesrgan.py) 
+
+    Load and upscale each (640×512) image (in this case.....any res app) 
+
+    Resize to 1280×720 (in this case.... You can do upto 2560x2080) 
+
+    Save the result to another folder. 
+
 ## 🔧 Dependencies and Installation
 
 - Python >= 3.7 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html))
