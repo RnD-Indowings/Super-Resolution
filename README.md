@@ -111,7 +111,7 @@ Will build your batch processing script using RRDBNet (the real model) and the s
 
     Save the result to another folder. 
 
-## 🔧 Dependencies and Installation
+## 🔧 Dependencies and Installation (N/A IW)
 
 - Python >= 3.7 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html))
 - [PyTorch >= 1.7](https://pytorch.org/)
