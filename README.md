@@ -30,17 +30,7 @@
 Real-ESRGAN aims at developing **Practical Algorithms for General Image/Video Restoration**.<br>
 We extend the powerful ESRGAN to a practical restoration application (namely, Real-ESRGAN), which is trained with pure synthetic data.
 
-🌌 Thanks for your valuable feedbacks/suggestions. All the feedbacks are updated in [feedback.md](docs/feedback.md).
 
----
-
-If Real-ESRGAN is helpful, please help to ⭐ this repo or recommend it to your friends 😊 <br>
-Other recommended projects:<br>
-▶️ [GFPGAN](https://github.com/TencentARC/GFPGAN): A practical algorithm for real-world face restoration <br>
-▶️ [BasicSR](https://github.com/xinntao/BasicSR): An open-source image and video restoration toolbox<br>
-▶️ [facexlib](https://github.com/xinntao/facexlib): A collection that provides useful face-relation functions.<br>
-▶️ [HandyView](https://github.com/xinntao/HandyView): A PyQt5-based image viewer that is handy for view and comparison <br>
-▶️ [HandyFigure](https://github.com/xinntao/HandyFigure): Open source of paper figures <br>
 
 ---
 
@@ -84,7 +74,7 @@ Other recommended projects:<br>
 
 #### YouTube
 
-##Indo Wings
+### Indo Wings
 Super Resolution Using Deep Learning 
 
 To upscale thermal images using the official Real-ESRGAN repository and the RealESRGAN_x{any model u need} plus model, outputting high-resolution results (e.g., 2560×2048 pixels or whatever the resolution needed) while ensuring compatibility and avoiding common errors. 
