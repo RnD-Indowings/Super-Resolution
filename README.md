@@ -74,7 +74,7 @@ We extend the powerful ESRGAN to a practical restoration application (namely, Re
 
 #### YouTube
 
-### Indo Wings
+### Indo Wings Super Resolution Thermal Enhancer
 Super Resolution Using Deep Learning 
 
 To upscale thermal images using the official Real-ESRGAN repository and the RealESRGAN_x{any model u need} plus model, outputting high-resolution results (e.g., 2560×2048 pixels or whatever the resolution needed) while ensuring compatibility and avoiding common errors. 
