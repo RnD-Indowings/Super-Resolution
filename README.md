@@ -109,6 +109,9 @@ Will build your batch processing script using RRDBNet (the real model) and the s
 
     Save the result to another folder. 
 
+    Run: batch_upscaling_resize.py to get more detailing and more configuring options for your image enhancer(according to your needs)
+    Run: upscaling_crop_resize.py to get the default settings for your image enhancer with cropping down
+
 ## ⚡ Quick Inference
 
 There are usually three ways to inference Real-ESRGAN.
