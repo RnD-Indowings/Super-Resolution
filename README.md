@@ -77,12 +77,12 @@ Steps for downloading and installation:
 
 FOR CUDA VERSION CHECK: 
 
-nvcc --version 
-
-Got the latest version as 11.5, so the command for it is: 
-
-pip install torch==1.11.0+cu115 torchvision==0.12.0+cu115 --extra-index-url https://download.pytorch.org/whl/cu115 
-
+    nvcc --version 
+    
+    Got the latest version as 11.5, so the command for it is: 
+    
+    pip install torch==1.11.0+cu115 torchvision==0.12.0+cu115 --extra-index-url https://download.pytorch.org/whl/cu115 
+    
 FOR checking the installation: 
 
     cd ~/Real-ESRGAN  
