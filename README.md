@@ -36,8 +36,6 @@
 
 ---
 
-#### YouTube
-
 ### Indo Wings Super Resolution Thermal Enhancer
 Super Resolution Using Deep Learning 
 
