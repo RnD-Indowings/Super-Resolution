@@ -7,19 +7,39 @@ FOLDER="/home/udit/Real-ESRGAN-Main"
 RIFE_FOLDER="/home/udit/ECCV2022_RIFE_main"
 
 # List of all video_break and batches scripts (12 pairs)
+# ==============================
+# List of all video_break and batches scripts (12 pairs with full paths)
+# ==============================
 video_break_list=(
-    "first_video_break.py" "second_video_break.py" "third_video_break.py"
-    "fourth_video_break.py" "fifth_video_break.py" "sixth_video_break.py"
-    "seventh_video_break.py" "eighth_video_break.py" "ninth_video_break.py"
-    "tenth_video_break.py" "eleventh_video_break.py" "twelfth_video_break.py"
+    "/home/zz/Super-Resolution/first_video_break.py"
+    "/home/zz/Super-Resolution/second_video_break.py"
+    "/home/zz/Super-Resolution/third_video_break.py"
+    "/home/zz/Super-Resolution/fourth_video_break.py"
+    "/home/zz/Super-Resolution/fifth_video_break.py"
+    "/home/zz/Super-Resolution/sixth_video_break.py"
+    "/home/zz/Super-Resolution/seventh_video_break.py"
+    "/home/zz/Super-Resolution/eighth_video_break.py"
+    "/home/zz/Super-Resolution/ninth_video_break.py"
+    "/home/zz/Super-Resolution/tenth_video_break.py"
+    "/home/zz/Super-Resolution/eleventh_video_break.py"
+    "/home/zz/Super-Resolution/twelfth_video_break.py"
 )
 
 batches_list=(
-    "first_batches.py" "second_batches.py" "third_batches.py"
-    "fourth_batches.py" "fifth_batches.py" "sixth_batches.py"
-    "seventh_batches.py" "eighth_batches.py" "ninth_batches.py"
-    "tenth_batches.py" "eleventh_batches.py" "twelfth_batches.py"
+    "/home/zz/Super-Resolution/first_batches.py"
+    "/home/zz/Super-Resolution/second_batches.py"
+    "/home/zz/Super-Resolution/third_batches.py"
+    "/home/zz/Super-Resolution/fourth_batches.py"
+    "/home/zz/Super-Resolution/fifth_batches.py"
+    "/home/zz/Super-Resolution/sixth_batches.py"
+    "/home/zz/Super-Resolution/seventh_batches.py"
+    "/home/zz/Super-Resolution/eighth_batches.py"
+    "/home/zz/Super-Resolution/ninth_batches.py"
+    "/home/zz/Super-Resolution/tenth_batches.py"
+    "/home/zz/Super-Resolution/eleventh_batches.py"
+    "/home/zz/Super-Resolution/twelfth_batches.py"
 )
+
 
 # ==============================
 # Step 2 + 3 Function
