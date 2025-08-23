@@ -3,41 +3,38 @@
 # Drone Video Enhancement Script (12 unique break/batch files)
 # ==============================
 
-FOLDER="/home/udit/Real-ESRGAN-Main"
-RIFE_FOLDER="/home/udit/ECCV2022_RIFE_main"
+FOLDER="/home/zz/Super-Resolution"
+RIFE_FOLDER="/home/zz/ECCV2022_RIFE"
 
 # List of all video_break and batches scripts (12 pairs)
-# ==============================
-# List of all video_break and batches scripts (12 pairs with full paths)
-# ==============================
 video_break_list=(
-    "/home/zz/Super-Resolution/first_video_break.py"
-    "/home/zz/Super-Resolution/second_video_break.py"
-    "/home/zz/Super-Resolution/third_video_break.py"
-    "/home/zz/Super-Resolution/fourth_video_break.py"
-    "/home/zz/Super-Resolution/fifth_video_break.py"
-    "/home/zz/Super-Resolution/sixth_video_break.py"
-    "/home/zz/Super-Resolution/seventh_video_break.py"
-    "/home/zz/Super-Resolution/eighth_video_break.py"
-    "/home/zz/Super-Resolution/ninth_video_break.py"
-    "/home/zz/Super-Resolution/tenth_video_break.py"
-    "/home/zz/Super-Resolution/eleventh_video_break.py"
-    "/home/zz/Super-Resolution/twelfth_video_break.py"
+    "/home/zz/Super-Resolution/final_video_breaking.py"
+    "/home/zz/Super-Resolution/two_final_video_breaking.py"
+    "/home/zz/Super-Resolution/three_final_video_breaking.py"
+    "/home/zz/Super-Resolution/four_final_video_breaking.py"
+    "/home/zz/Super-Resolution/five_final_video_breaking.py"
+    "/home/zz/Super-Resolution/six_final_video_breaking.py"
+    "/home/zz/Super-Resolution/seven_final_video_breaking.py"
+    "/home/zz/Super-Resolution/eight_final_video_breaking.py"
+    "/home/zz/Super-Resolution/nine_final_video_breaking.py"
+    "/home/zz/Super-Resolution/ten_final_video_breaking.py"
+    "/home/zz/Super-Resolution/eleven_final_video_breaking.py"
+    "/home/zz/Super-Resolution/twelve_final_video_breaking.py"
 )
 
 batches_list=(
-    "/home/zz/Super-Resolution/first_batches.py"
-    "/home/zz/Super-Resolution/second_batches.py"
-    "/home/zz/Super-Resolution/third_batches.py"
-    "/home/zz/Super-Resolution/fourth_batches.py"
-    "/home/zz/Super-Resolution/fifth_batches.py"
-    "/home/zz/Super-Resolution/sixth_batches.py"
-    "/home/zz/Super-Resolution/seventh_batches.py"
-    "/home/zz/Super-Resolution/eighth_batches.py"
-    "/home/zz/Super-Resolution/ninth_batches.py"
-    "/home/zz/Super-Resolution/tenth_batches.py"
-    "/home/zz/Super-Resolution/eleventh_batches.py"
-    "/home/zz/Super-Resolution/twelfth_batches.py"
+    "/home/zz/Super-Resolution/final_batches.py"
+    "/home/zz/Super-Resolution/two_final_batches.py"
+    "/home/zz/Super-Resolution/three_final_batches.py"
+    "/home/zz/Super-Resolution/four_final-batches.py"
+    "/home/zz/Super-Resolution/five_final_batches.py"
+    "/home/zz/Super-Resolution/six_final_batches.py"
+    "/home/zz/Super-Resolution/seven_final_batches.py"
+    "/home/zz/Super-Resolution/eight_final_batches.py"
+    "/home/zz/Super-Resolution/nine_final_batches.py"
+    "/home/zz/Super-Resolution/ten_final_batches.py"
+    "/home/zz/Super-Resolution/eleven_final_batches.py"
+    "/home/zz/Super-Resolution/twelve_final_batches.py"
 )
 
 
@@ -75,7 +72,7 @@ run_all_batches() {
             idx=$((idx+1))
         done
         echo "=== Waiting before next batch... ==="
-        sleep 15   # adjust as needed
+        sleep 2   # adjust as needed
     done
 }
 
@@ -85,7 +82,7 @@ run_all_batches() {
 run_step4() {
     cd $FOLDER || exit
     echo "=== Step 4: Stitching 12 outputs into one video ==="
-    python3 video_stitching.py --inputs output_run*
+    python3 /home/zz/Super-Resolution/final-video-stitching.py
 }
 
 # ==============================
@@ -94,7 +91,7 @@ run_step4() {
 run_step5() {
     cd $RIFE_FOLDER || exit
     echo "=== Step 5: FPS Enhancement using RIFE ==="
-    python3 inference_video.py --exp=1 --video=$FOLDER/final_stitched/output-all-runs.mp4
+    python3 inference_video.py --exp=1 --video=/home/zz/Super-Resolution/all-final-stitched/FINAL-OUTPUT.mp4
 }
 
 # ==============================
